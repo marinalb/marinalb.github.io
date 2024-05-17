@@ -3,23 +3,20 @@ function armazenaValor() {
 
     var userInput = document.getElementById("userInput").value; 
 
-    if (userInput % 2 === 0 ) {
-        document.getElementById("valorInserido").innerText = "O val inserido é PAR! ";
+    var yearResult = (2024 - userInput)
+        document.getElementById("valorInserido").innerText = "O ano é: " + yearResult;
 
-    }else {
-        document.getElementById("valorInserido").innerText = "O val inserido é IMPAR";
-    }
+ 
 }
-
 
 function armazenaValor2() {
 
     var userInput = document.getElementById("userInput2").value; 
 
-    if (userInput < 100 ) {
-        document.getElementById("valorInput").innerText = "O val inserido é MENOR que 100! ";
+    if (userInput < 500 ) {
+        document.getElementById("valorInput").innerText = "O val inserido é MENOR que 500! ";
 
     }else if (userInput > 100) {
-        document.getElementById("valorInput").innerText = "O val inserido é MAIOR que 100";
+        document.getElementById("valorInput").innerText = "O val inserido é MAIOR que 500";
     }
 }
