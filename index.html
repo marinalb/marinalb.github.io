@@ -5,6 +5,23 @@
     <meta name="viewport" content="widht=device-widht", initial-scale="1.0">
     <title>Números Pares</title> 
     <link rel="stylesheet" href="styles.css">
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid sienna;
+            padding: auto;
+            text-align: left;
+        }
+        th {
+            background-color: blanchedalmond;
+        }
+        tr:hover {
+            background-color: azure;
+        }
+    </style>
 </head>   
 <body>
     <h1> Insert a number!</h1>
@@ -13,6 +30,7 @@
     <button onclick="armazenaValor()">Click here!</button>
     <p id="valorInserido"></p>
 
+    
     <h1> Insert a number (again)!</h1>
     <h4> Veja se o seu número é maior que 500</h4>
 
@@ -20,6 +38,109 @@
     <input type="text" id="userInput2">
     <button onclick="armazenaValor2()">Click also here!</button>
     <p id="valorInput"></p>
+    <h1>Table - My first example!</h1>
+    <table>
+        <thead>
+            <tr>
+                <th> Name </th>
+                <th> Age </th>
+                <th> Location </th>
+            </tr>    
+        </thead>
+        <tbody>
+            <tr>
+                <th>Marina</th>
+                <th>32</th>
+                <th>Porto Alegre</th>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <th>Ramon Dino</th>
+                <th>27</th>
+                <th>Acre</th>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <th>Avril Lavigne</th>
+                <th>35</th>
+                <th>Canada</th>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <th>Marina</th>
+                <th>123</th>
+                <th>Vegas</th>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <th>Elizabeth Queen</th>
+                <th>123</th>
+                <th>Sky</th>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <th>Madonna</th>
+                <th>65</th>
+                <th>Portugal</th>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <th>Mario</th>
+                <th>43</th>
+                <th>Italy</th>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <th>Luiggi</th>
+                <th>39</th>
+                <th>Spain</th>
+            </tr>
+        </tbody>
+     </table>
+        <h1>Form - My first example!</h1>
+        <form action = "#" method="POST">
+            <label for="nome">Name: </label>
+            <input type="text" id="name" name="name" required><br><br> 
+    
+            <label for="email">email: </label>
+            <input type="email" id="email" name="email" required><br><br>
+    
+            <label for="idade">Idade: </label>
+            <input type="number" id="age" name="age" required><br><br>
+    
+            <label for="message">Message: </label>
+            <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+    
+            <input type="submit" value="Send your message">
+            <input type="reset" value="Reset">
+        </form>
+    
+        <h1>Image Data Base!</h1>
+        <img src="pizza.jpg" alt="Image_burguer">
+    
+        <h2>Background</h2>
+        <div class="img-background">
+            <p>Have a burger.</p>
+        </div>
+    
+        <style>
+            .img-background {
+                background-image:
+                url('https://s41230.pcdn.co/wp-content/uploads/2018/07/Big-Mac-Bosh-Cropped-2-1024x576.jpg');
+                background-size: cover;
+                height: 280px;
+                color: white;
+                text-align: center;
+                padding-top: 100 px;
+            }
+        </style>
 
     <script src="script.js"></script>
 
