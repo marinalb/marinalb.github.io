@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="widht=device-widht", initial-scale="1.0">
+    <title>DOM Application</title> 
+    <link rel="stylesheet" href="styles.css">
+</head> 
+    <body>
+        <h1 id="title">Hello World!</h1>
+        <p class="description">Page before DOM</p>
+        <button id="button">Click here to activate</button>
+
+        <script>
+            let title = document.getElementById("title");
+            let description = document.querySelector(".description");
+            let button = document.getElementById("button");
+    
+        //Events
+
+        button.addEventListener("click", function()
+        {
+            title.innerHTML = "Title CHANGED! ";
+            description.innerHTML = "Content was changed";
+            title.classList.toggle("Highlight");
+        });   
+        </script>
+
+    <h1>Form!</h1>
+    <div id="formContainer">
+        <!--Form here -->
+    </div>
+    <button onclick="addField()">Add field </button>
+
+    <script src="script7.js"></script>
+
+    <h1>App for efects/styles DOM</h1>
+    <div id="elementToStyle">
+        Text Modified!!
+    </div>
+
+    <button onclick="applyStyle()">
+        Buy Here
+    </button>
+
+    </body>
+</html>

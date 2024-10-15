@@ -10,6 +10,8 @@ body {
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     background-color: rgb(1, 3, 11);
     color: #B9B4E8;
+    flex-direction: column;
+    align-items: center;
 }
 
 .container {
@@ -36,6 +38,25 @@ header a {
    
 }
 
+h1 {
+    padding: 0;
+    text-align: center;
+    list-style: none;
+
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    
+}
+
 header ul {
     padding: 0;
     text-align: center;
@@ -52,6 +73,17 @@ header .container::after {
     content: "";
     display: table;
     clear: both;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #24204A;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: auto;
 }
 
 #hero {
@@ -175,6 +207,20 @@ section h2 {
 
 #contact form input[type="submit"]:hover {
     background: #5599ee;
+}
+
+#formContainer {
+    padding: 0;
+    text-align: center;
+    
+}
+
+
+#elementToStyle {
+    background: #5f53cd;
+    margin-top: 20px;
+    width: 300px;
+    text-align: center;
 }
 
 footer {

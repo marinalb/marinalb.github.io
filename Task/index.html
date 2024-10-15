@@ -30,7 +30,7 @@
     <section id="about" >
         <div class="container">
             <h2>About me: </h2>
-            <p>I am a dedicated and experienced software professional with a strong background in Java and testing automation. I'm also have over a decade of hands-on experience in Java development and testing automation. My career has taken me across multiple geographies, allowing me to work in diverse and dynamic environments, adapting to different cultures and technical challenges.</p> 
+            <p>I am a dedicated and experienced software professional with a strong background in Java and testing automation. I'm also have over a decade of hands-on experience in Java development and testing automation, my career has taken me across multiple geographies, allowing me to work in diverse and dynamic environments, adapting to different cultures and technical challenges.</p> 
             </div>
     </section>
     <section id="projects">
@@ -84,13 +84,34 @@
                 <label for="email">Email: </label>
                 <input type="email" id="email" name="email" required>
 
-                <label for="email">Message: </label>
-                <textarea id="message" name="message" rows="4" required></textarea>
+                <!-- <label for="email">Message: </label>
+                <textarea id="message" name="message" rows="4" required></textarea> -->
 
                 <input type="submit" value="Submit">
             </form> 
         </div>
     </section>
+
+    <h1 id="title">Message:</h1>
+    <div id="formContainer">
+        <!--Messages here -->
+    </div>
+    <br><br>
+    <button id="button" onclick="addField()">Add new Message </button>
+    <script src="module6.js"></script>
+
+    <script>
+        let title = document.getElementById("title");
+        let button = document.getElementById("button");
+
+    //Events
+
+    button.addEventListener("click", function()
+    {
+        title.innerHTML = "Message Sent! ";
+        title.classList.toggle("Highlight");
+    });   
+    </script>
 
     <footer>
         <div class="container">
