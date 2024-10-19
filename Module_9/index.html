@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="widht=device-widht", initial-scale="1.0">
+    <title>Sweet Alert Example</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<style>
+    .container {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .box {
+        background: #3498db;
+        color: white;
+        padding: 50px;
+        margin: 50px 0;
+        border-radius: 5px;
+        font-size: 20px;
+    }
+</style>
+<body>
+    <button id="alertButton">Click HERE</button>
+    <script>
+        AOS.init();
+        document.getElementById('alertButton').addEventListener('click', function(){
+            swal({
+                title: ":D",
+                text: "You clicked",
+                icon: "success",
+                button: "close",
+
+            });
+        });
+    </script>
+
+    <div class="container">
+        <div class="box" data-aos="fade-up">Box 1</div>
+        <div class="box" data-aos="fade-right">Box 2</div>
+        <div class="box" data-aos="fade-left">Box 3</div>
+        <div class="box" data-aos="fade-down">Box 4</div>
+        <div class="box" data-aos="fade-up">Box 5</div>
+        <div class="box" data-aos="fade-right">Box 6</div>
+        <div class="box" data-aos="fade-left">Box 7</div>
+        <div class="box" data-aos="fade-down">Box 8</div>
+        <div class="box" data-aos="fade-up">Box 9</div>
+    </div>
+</body>   
+</html>

@@ -64,12 +64,21 @@ let next = document.querySelector('.next');
 
 document.getElementById('checkout').addEventListener('click', () => {
     if (cart.length === 0) {
-        alert ('Cart Empty!');
+        swal({
+            text: "Your cart is empty!",
+            icon: "warning",
+            title: "Oops...",
+            button: "close",
+        });
     } else {
-        alert('Your request has been submited successfully!');
-        cart = [];
-        renderCart();
-    }
+        swal({
+            title: "Success!",
+            text: "Your request was submitted successfully!",
+            icon: "success",
+            button: "close",
+
+        });
+     }
 });
 
 renderProducts();

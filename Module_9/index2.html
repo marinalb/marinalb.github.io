@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="widht=device-widht", initial-scale="1.0">
+    <title>Slide Out Example</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .menu {
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            width: 256px;
+            background-color: #333;
+            color: #fff;
+            z-index: 1;
+            transform: translateX(-100%);
+            transition: transform 0.3 ease;
+        }
+        .menu ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .menu ul li {
+            padding: 15px;
+            border-bottom: 1px solid #444;
+        }
+        .menu ul li a {
+            color: #fff;
+            text-decoration: none;
+        } 
+        .menu.is-open {
+            transform: translateX(0);
+        }
+        .content {
+            padding: 20px;
+            transition: transform 0.3 ease;
+        }
+        .content.is-open {
+            transform: translateX(256px);
+        }
+        .toggle-button {
+            display: inline-block;
+            margin: 20px;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            cursor: pointer;
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/1.0.1/slideout.min.css"></script>
+</head>
+<body>
+    <div class="menu" id="menu">
+        <ul>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+    <div class="content" id="content">
+        <div class="toggle-button" id="toggle-button">Menu</div>
+        <h1>Welcome!</h1>
+        <p>Slideout Example!</p>
+    </div>
+
+    <script>
+        var menu = document.getElementById('menu');
+        var content = document.getElementById('content');
+        var toggleButton = document.getElementById('toggle-button');
+
+        toggleButton.addEventListener('click', function() {
+            menu.classList.toggle('is-open');
+            content.classList.toggle('is-open');
+        });
+    </script>
+</body>
+</html>
